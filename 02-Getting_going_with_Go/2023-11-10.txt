@@ -4,3 +4,4 @@ completed module 007
 completed module 008
 completed module 009
 completed module 010
+completed module 011
