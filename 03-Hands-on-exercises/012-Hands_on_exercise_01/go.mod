@@ -1,3 +1,4 @@
-module github.com/enescakir/emoji
+module emoji
+go 1.21.5
 
-go 1.21.4
+require github.com/enescakir/emoji v1.0.0
