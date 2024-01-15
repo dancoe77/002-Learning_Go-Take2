@@ -17,7 +17,7 @@ func main() {
 	
 	// this does work
 	// var g if not declared holds the zero value
-	/*
+
 	var g int
 	fmt.Println(g)
 	g = 43
@@ -28,6 +28,5 @@ func main() {
 	// initializing a variable
 	var h int = 44
 	fmt.Println(h)
-	*/
-		
+	
 }
