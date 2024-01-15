@@ -10,8 +10,13 @@ func main() {
 	fmt.Println(b, c, d, f)
 	
 	// this would not work
+	/*
+	b, c, d, e := 0, 1, 2, 3
+	fmt.Println(b, c, d)
+	*/
 	
 	// this does work
+	// var g if not declared holds the zero value
 	/*
 	var g int
 	fmt.Println(g)
