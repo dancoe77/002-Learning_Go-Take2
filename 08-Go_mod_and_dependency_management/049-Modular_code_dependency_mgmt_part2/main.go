@@ -15,7 +15,4 @@ func main(){
 	s4 := dog.BigBarks()
 	fmt.Println(s3)
 	fmt.Println(s4)
-	
-	//also like this
-	
 }
