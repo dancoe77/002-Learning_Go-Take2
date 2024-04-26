@@ -1,4 +1,4 @@
-module github.com/dancoe77/008-puppy
+module github.com/dancoe77/049-Modular_code_dependency_mgmt_part2
 
 go 1.21.9
 
