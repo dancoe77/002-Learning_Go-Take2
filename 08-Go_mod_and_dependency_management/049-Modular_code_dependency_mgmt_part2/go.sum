@@ -1,4 +1,6 @@
 github.com/dancoe77/008-puppy v0.0.0-20240419181855-00af523fac6c h1:aSQBNqQDw9pLtMbG2QLsriScK9BEd8E+vxFuzROEXWY=
 github.com/dancoe77/008-puppy v0.0.0-20240419181855-00af523fac6c/go.mod h1:G0VhLcsv4nmcJiXKNnLEifJmXYvgyQXHJRGhIlVwmU0=
+github.com/dancoe77/008-puppy v1.3.0 h1:Ocs/8pK6p5em0JJ39bm0wR5aicNcQI1a9+PJ+YvH/ZE=
+github.com/dancoe77/008-puppy v1.3.0/go.mod h1:G0VhLcsv4nmcJiXKNnLEifJmXYvgyQXHJRGhIlVwmU0=
 github.com/dancoe77/009-dog v0.0.0-20240426191657-1b7dbb9ed19b h1:4wy9yA+F9iVjS8U0MefeP8H3MZGWXCQ3WyNQ9L0dnFI=
 github.com/dancoe77/009-dog v0.0.0-20240426191657-1b7dbb9ed19b/go.mod h1:lQJqhCNnBtMubJsOsh2TLCkGLaf7J/1XCCMOw5n0Zdg=

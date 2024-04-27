@@ -6,6 +6,8 @@ import(
 	"github.com/dancoe77/009-dog"
 )
 func main(){
+	puppy.From12()
+
 	s1 := puppy.Bark()
 	s2 := puppy.Barks()
 	fmt.Println(s1)
