@@ -7,9 +7,8 @@ import(
 
 func main(){
 	
-	t1 := version.Fedora
-	t2 := version.Versionlinux
-	t3 := version.Versionlinux
-	fmt.Println(t1, t3)
+	t1 := version.Linux
+	t2 := version.Windows
+	fmt.Println(t1)
 	fmt.Println(t2)
 }
