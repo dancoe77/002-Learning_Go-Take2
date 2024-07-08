@@ -11,7 +11,7 @@ func main() {
 
 	for i := 0; i < 100; i++ {
 		if i%2 == 0 {
-			fmt.Printlf("This is an even number \t %v", i)
+			fmt.Printf("This is an even number \t %v", i)
 		}
 	}
 }
