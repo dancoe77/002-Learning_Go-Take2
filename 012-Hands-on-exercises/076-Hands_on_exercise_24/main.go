@@ -16,6 +16,15 @@ func main(){
 	} else {
 		fmt.Println("x is between 201 and 250")
 	}
-	/*Intn returns, as an int, a non-negative pseudo-random number in the half-open interval [0,n) from the default Source.
-	It panics if n <= 0.  [func Intn](https://pkg.go.dev/math/rand#Intn)*/
+
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
+	fmt.Println(rand.Intn(3))
 }
