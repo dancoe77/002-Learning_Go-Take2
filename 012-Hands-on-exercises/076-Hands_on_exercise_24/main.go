@@ -6,8 +6,8 @@ import (
 )
 
 func main(){
-	rand.Intn(x); x <= 250
-	fmt.printf("x is %v \n", x)
+	x := rand.Intn(250)
+	fmt.Printf("x is %v \n", x)
 
 	if x <= 100 {
 		fmt.Println("x is between 0 and 100")
