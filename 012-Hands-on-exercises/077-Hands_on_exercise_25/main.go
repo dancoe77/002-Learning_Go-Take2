@@ -17,4 +17,5 @@ func main(){
 	case x >=201 && x <= 250:
 		fmt.Println("x is between 201 and 250")
 	}
+	// I picked this particular section of code because if, else if, and else fit very neatly into a switch and case conditional flow
 }	
