@@ -5,10 +5,10 @@ import (
 )
 
 func main(){
-	for i := 0; i <= 10; i++ {
-		if i%2 != 0 {
+	for i := 0; i <= 11; i++ {
+		if i%2 == 0 {
 			continue
 		}
-		fmt.Println("counting even numbers: ", i)
+		fmt.Println("counting odd numbers: ", i)
 	}
 }
