@@ -5,14 +5,24 @@ import (
 )
 
 func main(){
-	xi := []int{42, 43, 44}
-	fmt.Println(xi)
-
+	xi := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 	var s string = "##############################"
+	fmt.Printf("xi - %#v\n", xi)
 	fmt.Println(s)
 
-	//variadic parameter
-	xi = append(xi, 45, 46, 47, 99, 000)
-	fmt.Println(xi)
+	// [inclusive:exclusive]
+	fmt.Printf("xi - %#v\n", xi[0:4])
+	fmt.Println(s)
+
+	// [:exclusive]
+	fmt.Printf("xi - %#v\n", xi[:7])
+	fmt.Println(s)
+
+	// [inclusive:]
+	fmt.Printf("xi - %#v\n", xi[4:])
+	fmt.Println(s)
+
+	// [:]
+	fmt.Printf("xi - %#v\n", xi[:])
 	fmt.Println(s)
 }
