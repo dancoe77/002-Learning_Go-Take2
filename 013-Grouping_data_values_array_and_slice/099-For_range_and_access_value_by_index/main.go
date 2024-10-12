@@ -15,7 +15,26 @@ func main(){
 	fmt.Printf("%T\n", xs)
 	fmt.Println(len(xs))
 
-	for i, v := range xs {
-		fmt.Printf("%v - %v\n", i, v)
+	// blank identifier to not use a returned value
+	for _, v := range xs {
+		fmt.Printf("%v\n", v)
+	}
+	var s string = "#####################################"
+	fmt.Println(s)
+
+	fmt.Println(xs[0])
+	fmt.Println(xs[10])
+	fmt.Println(xs[20])
+	fmt.Println(xs[30])
+
+	// doesn't work
+	//fmt.Println(xs[31])
+
+	fmt.Println(len(xs))
+
+	fmt.Println(s)
+
+	for i := 0; i<len(xs); i++ {
+		fmt.Println(xs[i])
 	}
 }
