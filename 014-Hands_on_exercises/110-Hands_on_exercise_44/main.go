@@ -31,6 +31,6 @@ func main(){
 	fmt.Printf("xs - %#v\n", xs[2:7])
 	fmt.Println(s)
 
-	fmt.Printf("xs - %#v\n", xs[1:7])
+	fmt.Printf("xs - %#v\n", xs[1:6])
 	fmt.Println(s)
 }
