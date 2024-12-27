@@ -14,11 +14,16 @@ func main(){
 	fmt.Println(cap(xi))
 	fmt.Println(s)
 
-	xj = append(xi, 52)
-	fmt.Println(xj)
+	xi = append(xi, 52)
+	fmt.Println(xi)
 	fmt.Println(s)
 
-	xk = append(xj, 53, 54, 55)
-	fmt.Println(xk)
+	xi = append(xi, 53, 54, 55)
+	fmt.Println(xi)
+	fmt.Println(s)
+
+	yi := []int{56, 57, 58, 59, 60}
+	zi := append(xi, yi...)
+	fmt.Println(zi)
 	fmt.Println(s)
 }
