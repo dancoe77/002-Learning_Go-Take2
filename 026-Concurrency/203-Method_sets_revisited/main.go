@@ -24,5 +24,6 @@ func info(s shape) {
 func main() {
 	c := circle{5}
 	//info(c)
-	fmt.Println(c.area())
+	info(&c)
+	//fmt.Println(c.area())
 }
