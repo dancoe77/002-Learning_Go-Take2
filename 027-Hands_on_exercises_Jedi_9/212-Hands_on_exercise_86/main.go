@@ -4,13 +4,14 @@ import (
 	"fmt"
 	"runtime"
 	"sync"
+	"sync/atomic"
 )
 
 func main() {
 	fmt.Println("CPUs:", runtime.NumCPU())
 	fmt.Println("CPUs:", runtime.NumCPU())
 
-	incrementor := 0
+	var incrementor int64
 
 	const gs = 50
 	var wg sync.WaitGroup
@@ -18,10 +19,10 @@ func main() {
 
 	for i := 0; i < gs; i++ {
 		go func(){
-			v := incrementor
+			atomic.AddInt64(&incrementor, 1)
 			runtime.Gosched()
-			v++
-			incrementor = v
+			fmt.Println("Incrementor:\t", atomic.LoadInt64(&incrementor))
+
 			wg.Done()
 		}()
 		fmt.Println("Go routines:", runtime.NumGoroutine())
