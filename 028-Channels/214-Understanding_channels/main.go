@@ -25,3 +25,4 @@ because of the buffer
 c := make(chan int, 1)
 c <- 42
 fmt.Println(<- c)
+*/
