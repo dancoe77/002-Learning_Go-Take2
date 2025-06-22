@@ -21,7 +21,7 @@ func main() {
 	}
 }
 
-func gen() <-chan int {
+func gen() chan int {
 	out := make(chan int)
 	go func() {
 		for i := 0; i < 10; i ++ {
@@ -35,7 +35,7 @@ func gen() <-chan int {
 }
 
 func fanOut(in <-chan int, n int) []<-chan int {
-	xc := make([]<-chan int, n)
+	var xc []<-chan int // This needed to be zero
 	for i := 0; i < n; i++ {
 		xc = append(xc, factorial(in))
 	}
@@ -65,13 +65,13 @@ func merge(cs ...<-chan int) <-chan int {
 	var wg sync.WaitGroup
 	out := make(chan int)
 
-
 	output := func(c <-chan int) {
 		for n := range c {
 			out <- n
 		}
 		wg.Done()
 	}
+
 	wg.Add(len(cs))
 	for _, c := range cs {
 		go output(c)
